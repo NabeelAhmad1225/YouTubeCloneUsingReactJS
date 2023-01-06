@@ -17,7 +17,12 @@ const NavBar = () => (
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
-      <Typography variant="h5" color="#fff" fontWeight="bold" sx={{ ml: 2 }}>
+      <Typography
+        variant="h5"
+        color="#fff"
+        fontWeight="bold"
+        sx={{ ml: 2, display: { xs: "none", md: "flex" } }}
+      >
         {" "}
         My<span style={{ color: "#FC1503" }}>Tube</span>
       </Typography>
